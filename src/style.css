@@ -1,0 +1,48 @@
+@media only screen and (min-width: 771px) {
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    line-height: 2.0;
+    background-color: blue;
+    padding: 3%;
+    font-size: 20px;
+    float: left;
+}  
+.fCadastroCliente {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    
+}
+.fCadastroProdutos{
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.fCadastroVendas {
+width: 400px;
+padding: 20px;
+margin: 0 auto;
+}
+footer {
+    bottom: 0px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.carrinhoCompras { 
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    max-width: 40%;
+    height: auto;
+    padding: 3%;
+}
+}
