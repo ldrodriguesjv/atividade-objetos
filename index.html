@@ -1,19 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atividade Objetos</title>
+    <script src="src/index.js"></script>
+    <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-    <div id="produtos">
-    
-    
+    <div id="fCadastroCliente" class="fCadastroCliente">
+        <!-- Formulário para inserção de dados do cliente -->
+<form onsubmit="event.preventDefault(); fCadastroCliente(vnome.value, vemail.value, vidade.value);">
+    <input type="text" id="vnome" placeholder="Nome" required>
+    <input type="email" id="vemail" placeholder="Email" required>
+    <input type="number" id="vidade" placeholder="Idade" required>
+    <button type="submit">Cadastrar Cliente</button>
+</form>
     </div>
-     
-     <div id="carrinho">
 
-    <script src="src/index.js"></script>
-    </div>   
+    <div id="fCadastroProdutos" class="fCadastroProdutos">
+    <!-- Formulário para inserção de dados do produto -->
+<form onsubmit="event.preventDefault(); fCadastroProdutos(vproduto.value, vestoque.value, vvalor.value);">
+    <input type="text" id="vproduto" placeholder="Produto" required>
+    <input type="number" id="vestoque" placeholder="Estoque" required>
+    <input type="text" id="vvalor" placeholder="Valor" required>
+    <button type="submit">Cadastrar Produto</button>
+</form>   
+    </div>
+
+    <div id="fCadastroVendas" class="fCadastroVendas">
+<form onsubmit="event.preventDefault(); fCadastroVendas(vnomevendacliente.value, cnomevendaprod.value, vqtd.value, vtotal.value, vdata.value);">
+        <input type="text" id="vnomevendacliente" placeholder="Nome do Cliente" required>
+        <input type="text" id="cnomevendaprod" placeholder="Nome do Produto" required>
+        <input type="number" id="vqtd" placeholder="Quantidade" required>
+        <input type="text" id="vtotal" placeholder="Valor Total" required>
+        <input type="date" id="vdata" placeholder="Data da Venda" required>
+        <button type="submit">Registrar Venda</button>
+</form>
+    </div>
+    <div class="contêiner">
+    <img id= "carrinhocompras" src="src/carrinhocompras.png" class="carrinhoCompras">
+</div>
 </body>
+<footer>Desenvolvido por <a href="https://github.com/ldrodriguesjv">Leonardo</a> <a href="https://github.com/SilviaNeves">& Silvia</a>
+</footer>
 </html>
